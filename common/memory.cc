@@ -31,7 +31,7 @@ std::string mem_string( const MemoryStatus & mem_status,
 {
   std::ostringstream oss;
   // Change the percision for floats, for a pretty output
-  oss.precision( 2 );
+  oss.precision( 0 );
   oss.setf( std::ios::fixed | std::ios::right );
 
   unsigned int color = static_cast< unsigned int >((100 * mem_status.used_mem) / mem_status.total_mem);
